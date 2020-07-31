@@ -107,15 +107,17 @@
             </ul>
         </div>
     </header>
-    <hr>
+    
     <main>
         <section>
             <h2>SOBRE</h2>
+            <hr>
             <p> Graduated by FIAP in Digital Games, actually learning more about Javascript and Web Development in general. </p>
             <p>On free time I play video games a lot.</p>
         </section>
         <section>
             <h2>SKILLS</h2>
+            <hr>
             <div>
                 <h3>Soft Skills</h3>
                 <ul>
@@ -163,6 +165,7 @@
 
             </style>
             <h2>FORMAÇÃO</h2>
+            <hr>
             <table>
                 <tr>
                     <th>Curso</th> 
@@ -191,8 +194,9 @@
             </table>
 
         </section>
-        <section>
+        <section> 
             <h2>EXPERIÊNCIAS</h2>
+            <hr>
             <table>
                 <tr>
                     <th>Empresa</th>
@@ -205,6 +209,50 @@
                     <td>2020</td>
                 </tr>
             </table>
+        </section>
+        <section>
+            <h2>Entre em contato comigo!</h2>
+            <hr>
+            <p>Entre em contato através das informações no topo da página, ou preencha esse formulário que eu retorno o mais rápido que eu puder.</p>
+            <form action="" method="post">
+                <label for="company">Empresa interessada:</label> <br>
+                <input type="text" id="company"> <br>
+                <label for="years">Anos de mercado da empresa:</label> <br>
+                <input type="number" id="years"> <br>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email"> <br>
+
+                
+                <div>
+                    <label for="">Área de atuação:</label> <br>
+                    <input type="checkbox" id="front" name="front" value="frontend">
+                    <label for="vehicle1">Frontend</label><br>
+                    <input type="checkbox" id="back" name="back" value="backend">
+                    <label for="vehicle2">Backend</label><br>
+                </div>
+
+                <div>
+                    <label for="">Profissionalização:</label> <br>
+                    <input type="radio" name="profissionalizacao" value="junior"> Junior<br>
+                    <input type="radio" name="profissionalizacao" value="senior"> Senior<br>
+                    <input type="radio" name="profissionalizacao" value="pleno"> Pleno
+                </div>
+
+                <label for="select">Tipo de contratação:</label> <br>
+                <select name="select">
+                    <option value="valor1">Jovem Aprendiz</option> 
+                    <option value="valor2" >CLT</option>
+                    <option value="valor3">PJ</option>
+                </select> <br>
+
+                <label for="">Data prevista para início de trabalho:</label> <br>
+                <input type="date"> <br>
+                <label for="comments">Comentários:</label> <br>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea> <br>
+                
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
         </main>
     <footer>
