@@ -48,7 +48,6 @@ img{
     border-radius: 50%;
     background-color: #f07059; 
     padding: 5px;
-    margin-left: 10px;
     transition: background-color 0.2s ease-in-out;
 }
 img:hover {
@@ -129,4 +128,10 @@ footer {
     color: whitesmoke;
     background-color: #f07059;
     border: 1px solid whitesmoke;
+}
+
+@media screen and (min-width: 450px) {
+    main {
+        
+    }
 }

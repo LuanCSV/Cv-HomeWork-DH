@@ -6,13 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML e CSS</title>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./meu.css">
 </head>
 
 <body>
     <header id="top">
-        <h1>Programador Web Junior</h1>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <h1>Luan Vasconcelos</h1>
+            <img src="./assets/img/foto.jpeg" alt="Foto luan">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#formacao">Formação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experiencia">Experiências</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contato">Fale comigo</a>
+                </li>  
+              </ul>
+            </div>
+          </nav>
+
+        <!-- <h1>Programador Web Junior</h1>
         <div>
             <img src="./assets/img/foto.jpeg" alt="Foto luan">
             <ul type="none" class="items-perfil">
@@ -33,24 +60,24 @@
                     <a href="https://www.linkedin.com/in/luan-vasconcelos-96b409145/" target="_blank" rel="noopener noreferrer">linkedin.com/in/luan-vasconcelos-96b409145/</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </header>
     
     <main>
-        <section>
+        <section id="sobre">
             <h2>SOBRE</h2>
             <hr>
             <p> Graduated by FIAP in Digital Games, actually learning more about Javascript and Web Development in general. </p>
             <p>On free time I play video games a lot.</p>
         </section>
-        <section>
+        <section id="skills">
             <h2>SKILLS</h2>
             <hr>
             <div>
                 <h3>Soft Skills</h3>
                 <ul>
                     <li>Versatile</li>
-                    <li><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </strong></li>
+                    <li><strong>Lorem ipsum</strong>, dolor sit amet consectetur adipisicing elit.</li>
                 </ul>
             </div>
             <div>
@@ -71,102 +98,118 @@
                 </ul>
             </div>
         </section>
-        <section>
+
+        <section id="formacao">
             <h2>FORMAÇÃO</h2>
             <hr>
             <table>
                 <tr>
                     <th>Curso</th> 
-                    <th>Tipo</th> 
                     <th>Instituição</th> 
                     <th>Ano</th> 
                 </tr>
                 <tr>
                     <td>Programação Full Stack</td> 
-                    <td>Extensão</td>
                     <td>Digital House</td>
                     <td>2020</td>
                 </tr>
                 <tr>
                     <td>Jogos Digitais</td>
-                    <td>Tecnólogo</td> 
                     <td>FIAP</td> 
                     <td>2018</td> 
                 </tr>
                 <tr>
                     <td>Design</td>
-                    <td>Design Gráfico</td> 
                     <td>Infomártica</td>
                     <td>2012</td>
                 </tr>
             </table>
 
         </section>
-        <section> 
-            <h2>EXPERIÊNCIAS</h2>
-            <hr>
-            <table>
-                <tr>
-                    <th>Empresa</th>
-                    <th>Cargo</th>
-                    <th>Ano</th>
-                </tr>
-                <tr>
-                    <td>Wipro</td>
-                    <td>Analista</td>
-                    <td>2020</td>
-                </tr>
-            </table>
+        <section id="experiencia"> 
+          <h2>EXPERIÊNCIA</h2>
+          <hr>
+          </div>
         </section>
-        <section>
-            <h2>Entre em contato comigo!</h2>
-            <hr>
-            <p>Entre em contato através das informações no topo da página, ou preencha esse formulário que eu retorno o mais rápido que eu puder.</p>
-            <form action="" method="post">
-                <label for="company">Empresa interessada:</label> <br>
-                <input type="text" id="company"> <br>
-                <label for="years">Anos de mercado da empresa:</label> <br>
-                <input type="number" id="years"> <br>
-                <label for="email">E-mail:</label> <br>
-                <input type="email" id="email"> <br>
 
-                
-                <div>
-                    <label for="">Área de atuação:</label> <br>
-                    <input type="checkbox" id="front" name="front" value="frontend">
-                    <label for="vehicle1">Frontend</label><br>
-                    <input type="checkbox" id="back" name="back" value="backend">
-                    <label for="vehicle2">Backend</label><br>
+      <section id="contato">
+          <h2>CONTATO</h2>
+          <hr>
+          <p>Entre em contato através das informações no topo da página, ou preencha esse formulário que eu retorno o mais rápido que eu puder.</p>
+          <form method="post" action="">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inputEmpresa">Nome da Empresa</label>
+                <input type="text" class="form-control" id="inputEmpresa" required>
+              </div>    
+              <div class="form-group">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" required>
+              </div>
+              <div class="form-group">
+                <label>Área de atuação:</label> <br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Frontend</label>
                 </div>
-
-                <div>
-                    <label for="">Profissionalização:</label> <br>
-                    <input type="radio" name="profissionalizacao" value="junior"> Junior<br>
-                    <input type="radio" name="profissionalizacao" value="senior"> Senior<br>
-                    <input type="radio" name="profissionalizacao" value="pleno"> Pleno
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Backend</label>
                 </div>
+              </div>
 
-                <label for="select">Tipo de contratação:</label> <br>
-                <select name="select">
-                    <option value="valor1">Jovem Aprendiz</option> 
-                    <option value="valor2" >CLT</option>
-                    <option value="valor3">PJ</option>
-                </select> <br>
+              <div class="form-group">
+                <label>Profissionalização:</label> <br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Junior</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Senior</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">Pleno</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Tipo de contratação:</label> <br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio11" value="option11">
+                  <label class="form-check-label" for="inlineRadio11">Jovem Aprendiz</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio22" value="option22">                    <label class="form-check-label" for="inlineRadio22">CLT</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio33" value="option33">
+                  <label class="form-check-label" for="inlineRadio33">PJ</label>
+                </div>
+              </div>
 
-                <label for="">Data prevista para início de trabalho:</label> <br>
-                <input type="date"> <br>
-                <label for="comments">Comentários:</label> <br>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea> <br>
-                
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar</button> <br>
-                
-            </form>
-        </section>
-        </main>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comentários:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-danger">Limpar</button>
+          </form>
+      </section>
+    </main>
+        <a href="#top" id="subirBTN">Ir para o topo</a>
     <footer>
-       Luan Vasconcelos | &copy; Copyright | 2020
+      <!-- <p>Para mais informações, acesse minhas redes sociais:</p> -->
+      <a href="https://github.com/LuanCSV" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      <a href="https://www.linkedin.com/in/luan-vasconcelos-96b409145/" target="_blank" rel="noopener noreferrer">Linkedin</a> <br>
+      Luan Vasconcelos - 2020 <br>
+      &copy; Copyright
     </footer>
-    <a href="#top" id="subirBTN">Ir para o topo</a>
+  
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
