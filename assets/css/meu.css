@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    scroll-behavior: smooth;
+}
+main{
+    margin-top: 56px;
+    min-height: calc(100vh - 100px);
+    background-color: whitesmoke;
+}
+.carousel-item{
+    height: 25vh;
+    text-align: center;
+}
+
+[data-banner="1"]{
+    background-color: crimson;
+    color: white;
+}
+[data-banner="2"]{
+    background-color: firebrick;
+    color: white;
+}
+[data-banner="3"]{
+    background-color: orangered;
+    color: white;
+}
+ul, ol{
+    list-style: none;
+}
+h2{
+    color: crimson;
+    font-weight: bolder;
+}
+footer{
+    height: 44px;
+    color: white;
+}
+footer a{
+    color: crimson;
+}
+
+footer p{
+    height: 44px;
+    margin: 0;
+}
