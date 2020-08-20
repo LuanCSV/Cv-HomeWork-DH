@@ -17,7 +17,7 @@ $ git clone https://github.com/LuanCSV/Cv-HomeWork-DH.git
 Por fim, acesse a pasta do repositório e abra o VS Code dentro da mesma. Basta utilizar esses dois comandos a seguir:
 
 ```sh
-$ cd tn09-02-html-e-css
+$ cd Cv-HomeWork-DH
 $ code .
 ```
 Pronto! Agora você pode navegar no repositório acessando `localhost/Cv-HomeWork-DH/luan-index.html`.
